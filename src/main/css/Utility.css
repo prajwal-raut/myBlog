@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap");
+
+:root {
+  --color-1: #fff;
+  --color-2: #000;
+  --color-3: cyan;
+  --color-4: #ff9bf8;
+  --color-5: #060822;
+  --color-6:#face30;
+  --eff: 0.3s all ease;
+  --shadow: 0 .5rem 1rem rgb(0 0 0 / 60%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+body{
+  background-color: #f0f0ef !important;
+}
+

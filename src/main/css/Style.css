@@ -1,0 +1,278 @@
+/*********** Navbar section ***********/
+
+.navbar-brand {
+  font-size: 1.8rem !important;
+  color: var(--color-1);
+  padding: 0.4rem;
+  background-color: #00ffff7a !important;
+}
+.navbar-brand:hover {
+  color: var(--color-1);
+  cursor: default;
+}
+
+.navbar-nav li a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--color-1);
+  position: relative;
+}
+.navbar-nav li a:hover {
+  color: var(--color-3) !important;
+}
+.navbar-nav li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: 50%;
+  width: 0%;
+  background-color: var(--color-3) !important;
+  height: 3%;
+  transition: all 0.3s linear;
+}
+.navbar-nav li a:hover::before {
+  width: 80%;
+}
+
+.menu_active {
+  color: var(--color-3) !important;
+  font-weight: bold;
+}
+
+
+
+/*********** Home Page ***********/
+.h-card {
+  height: 20rem;
+  padding: 3rem 0 0 8rem;
+}
+
+.h-text {
+  font-size: 4rem;
+}
+
+.h-main {
+  display: flex;
+}
+
+.h-main .h-text {
+  color: var(--color-1);
+  font-size: 3rem !important;
+  font-weight: 400;
+  padding-top: 8px;
+}
+
+.h-main .option {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.option li {
+  list-style: none;
+  color: var(--color-6);
+  font-size: 3rem;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+.option li span {
+  position: relative;
+  margin: 5px 0;
+  left: -1rem;
+  line-height: 90px;
+}
+.option li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background: #212529;
+  border-left: 2px solid var(--color-6);
+  animation: typing 3s steps(10) infinite;
+}
+
+.bg-blue {
+  border-radius: 1rem !important;
+  background-color: var(--color-5);
+  height: 14rem;
+}
+
+.card-head {
+  color: var(--color-4) !important;
+  padding: 8px 0px 15px 0px;
+}
+
+.card-text-h {
+  color: #c3c5e9;
+  font-size: 14px;
+}
+
+.link-a,
+.link-a:hover {
+  color: #609df7;
+  text-decoration: none;
+  padding: 1rem 0 0 0;
+}
+
+.pri-image {
+  width: 100%;
+  position: relative;
+  top: 2rem;
+  left: 4px;
+  border: 1px solid var(--color-5);
+  height: 9rem;
+}
+
+
+
+/*********** Blog Page ***********/
+/* left side of the blog  */
+
+.f-size {
+  line-height: 170%;
+}
+
+figure img,
+.fab {
+  transition: var(--eff);
+}
+
+.left_div_btns {
+  margin-top: 3rem;
+  transition: var(--eff); 
+}
+
+.blog_left__div .left_div__like {
+  border-width: 0.2rem;
+  font-size: 1rem;
+  transition: var(--eff);
+  padding: 0.2rem 1rem;
+}
+
+.blog_left__div .left_div__reply {
+  border-width: 0.2rem;
+  font-size: 1rem;
+  transition: var(--eff);
+  padding: 0.2rem 1rem;
+}
+
+.left_div__like:hover,
+.left_div__reply:hover,
+figure img:hover{
+  transform: translateY(-0.5rem);
+  box-shadow: var(--shadow);
+}
+
+
+/**** right side div  ****/
+
+.mb-4{
+  margin: 2rem 0 !important;
+}
+
+
+/*blog tags start*/
+
+.tags_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1rem));
+  grid-gap: .5rem;
+}
+
+.tags_main a {
+  font-size: 14px;
+  line-height: 200%;
+  font-weight: lighter;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  text-decoration: none;
+  transition: var(--eff);
+}
+
+.tags_main a:hover {
+  color: var(--color-2);
+  background-color: var(--color-4);
+  cursor: pointer;
+}
+
+.right_sub__div {
+  padding: 1.5rem 1rem;
+}
+
+
+/* Social icons */
+
+.fab {
+  font-size: 2.3rem;
+}
+.fa-github-square{
+color: #426381;
+
+}
+.fa-linkedin{
+  color:#0077b5;
+}
+.fa-discord{
+  color:#6e85d3;
+}
+.fa-telegram{
+  color:#29A9EA;
+}
+.fa-twitter-square{
+  color:#55acee;
+}
+
+.fab:hover {
+  transform: rotate(360deg);
+}
+
+
+/* side widgets */
+
+.side-stick{
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--color-1);
+  box-shadow: var(--shadow);
+}
+
+.card-header{
+  background-color:#f8f9fa !important;
+}
+.card-body{
+  border-bottom: 1px solid #ebd5d5;
+}
+
+.fa-user-circle{
+font-size: 2.5rem;
+}
+
+.co-icon{
+  font-size: 1.4rem;
+  position: absolute;
+  top: 3.4rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+
+
+/*********** Service Page ***********/
+.shadow-card{
+  box-shadow: var(--shadow) !important;
+}
+
+
+
+/*********** Contact Page ***********/
+.form-control {
+  border: 1px solid var(--color-2) !important;
+}
